@@ -33,6 +33,12 @@
             </intent-filter>
         </activity>
 
+        <service android:name=".services.VoiceRecognitionService"
+            android:foregroundServiceType="microphone"
+            android:exported="false"/>
 
+        <service android:name=".services.NotificationService"
+            android:exported="false"/>
     </application>
+
 </manifest>
