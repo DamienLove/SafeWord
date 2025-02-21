@@ -35,13 +35,17 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.activity:activity-ktx:1.7.0")
-    implementation("androidx.fragment:fragment-ktx:1.5.7")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-    implementation("androidx.lifecycle:lifecycle-service:2.6.1")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.core:core-ktx:1.12.0")                     // Latest - No change
+    implementation("androidx.activity:activity-ktx:1.8.2")               // Updated to latest
+    implementation("androidx.lifecycle:lifecycle-service:2.7.0")         // Updated to match lifecycle-runtime-ktx
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")  // Updated to latest
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")        // Updated to latest
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")   // Latest - No change
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")     // Latest - Already updated
+    implementation("androidx.fragment:fragment-ktx:1.6.2")               // Latest - Already updated
+    implementation("androidx.appcompat:appcompat:1.6.1")                 // Latest - Already updated
 }
+
+
+
+

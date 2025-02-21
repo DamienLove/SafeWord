@@ -10,8 +10,6 @@ import androidx.core.content.edit
 import com.safeword.services.VoiceRecognitionService
 import com.safeword.databinding.ActivityMainBinding
 
-
-
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var safewordEnable: ToggleButton
@@ -31,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         val isEnabled = sharedPreferences.getBoolean("isSafeWordEnabled", false)
         safewordEnable.isChecked = isEnabled
 
-
         // ✅ Set up button clicks
         binding.startButton.setOnClickListener {
             startVoiceRecognition()
@@ -45,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
+
         // Handle ToggleButton changes
         safewordEnable.setOnCheckedChangeListener { _, isChecked ->
             sharedPreferences.edit {
@@ -59,8 +57,8 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "SafeWord disabled", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
+
     private fun startVoiceRecognition() {
         val intent = Intent(this, VoiceRecognitionService::class.java)
         startService(intent)
@@ -70,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, VoiceRecognitionService::class.java)
         stopService(intent)
     }
+
     // Function to start VoiceRecognitionService
     private fun startSafeWordService() {
         val serviceIntent = Intent(this, VoiceRecognitionService::class.java)
@@ -82,5 +81,3 @@ class MainActivity : AppCompatActivity() {
         stopService(serviceIntent)
     }
 }
-
-
