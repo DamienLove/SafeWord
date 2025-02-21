@@ -1,6 +1,5 @@
 package com.safeword
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         safewordEnable = binding.SafewordEnable
 
         // Load saved state from SharedPreferences
-        val sharedPreferences = getSharedPreferences("SafeWordPrefs", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("SafeWordPrefs", MODE_PRIVATE)
         val isEnabled = sharedPreferences.getBoolean("isSafeWordEnabled", false)
         safewordEnable.isChecked = isEnabled
 
