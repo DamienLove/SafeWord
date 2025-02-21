@@ -11,9 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:autoText="false"
-        android:text="Safeword"
+        android:text="@string/safeword"
         android:visibility="visible"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        tools:ignore="Deprecated" />
 
     <ToggleButton
         android:id="@+id/SafewordEnable"
@@ -38,7 +39,7 @@
         android:id="@+id/SafewordRecordText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Safeword Record" />
+        android:text="@string/safeword_record" />
 
     <TableRow
         android:layout_width="match_parent"

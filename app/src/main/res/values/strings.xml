@@ -15,4 +15,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="action_settings">Settings</string>
+    <string name="safeword">Safeword</string>
+    <string name="safeword_record">Safeword Record</string>
 </resources>

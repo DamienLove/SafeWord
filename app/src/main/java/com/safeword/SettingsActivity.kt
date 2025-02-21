@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
+
 class SettingsActivity : AppCompatActivity() {
 
     private lateinit var prefs: SharedPreferences

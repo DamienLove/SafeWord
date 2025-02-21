@@ -32,12 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".SettingsActivity" />
+
 
         <service android:name=".services.VoiceRecognitionService"
             android:foregroundServiceType="microphone"
             android:exported="false"/>
 
-        <service android:name=".services.NotificationService"
+        <service android:name=".utils.NotificationService"
             android:exported="false"/>
     </application>
 

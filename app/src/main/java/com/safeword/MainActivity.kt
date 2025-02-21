@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         // Handle ToggleButton changes
         safewordEnable.setOnCheckedChangeListener { _, isChecked ->
             sharedPreferences.edit {
